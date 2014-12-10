@@ -1,4 +1,4 @@
 CSSnowflakes
 =============
 
-CSS snowlakes for your website, no JS nedded!!
+CSS snowlakes for your website, no JS needed!!

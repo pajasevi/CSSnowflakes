@@ -1,3 +1,10 @@
+.snowflake {
+  color: #fff;
+  font-size: 1.5em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
 @-webkit-keyframes snowflakes-fall {
     0% {
         top: -10%;
@@ -60,9 +67,7 @@
 .snowflake {
     position: fixed;
     top: -10%;
-    color: #fff;
-    font-size: 1.5em;
-    font-family: Arial;
+    z-index: 9999;
 
     -webkit-animation-name: snowflakes-fall, snowflakes-shake;
     -webkit-animation-duration: 10s, 3s;

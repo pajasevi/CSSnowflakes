@@ -68,6 +68,8 @@
     position: fixed;
     top: -10%;
     z-index: 9999;
+    user-select:none;
+    cursor:default;
 
     -webkit-animation-name: snowflakes-fall, snowflakes-shake;
     -webkit-animation-duration: 10s, 3s;

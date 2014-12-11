@@ -1,6 +1,8 @@
 CSSnowflakes
 =============
 
+Demo: [http://pajasevi.github.io/CSSnowflakes/](http://pajasevi.github.io/CSSnowflakes/)
+
 CSS snowlakes for your website, no JS needed!! Working in modern browsers using CSS animation (IE10+).
 
 Just add the code from __snippet.html__ to your webpage and enjoy beautiful falling snowflakes. Snowflakes should not be visible in older browsers, thus not breaking layout.

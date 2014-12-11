@@ -11,4 +11,4 @@ Tip: You can change *color*, *text-shadow*, *font-family* and *font-size* at the
 
 Tip2: You can switch snowflakes off with :
 
-    .snowlakes { display: none; }
+    .snowflakes { display: none; }

@@ -46,7 +46,14 @@ hr {
   transition: color 0.3s;
 }
 
-.github-link:hover {
+.love a {
+  color: #fff;
+  text-shadow: 1px 1px 3px #333;
+  transition: color 0.3s;
+}
+
+.github-link:hover,
+.love a:hover {
   color: #ccc;
 }
 

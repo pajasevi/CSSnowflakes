@@ -1,8 +1,8 @@
 .snowflake {
   color: #fff;
   font-size: 1em;
-  font-family: Arial;
-  text-shadow: 0 0 1px #000;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
 }
 
 @-webkit-keyframes snowflakes-fall {

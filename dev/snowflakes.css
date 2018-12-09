@@ -128,3 +128,13 @@
     -webkit-animation-delay: 3s, 1.5s;
     animation-delay: 3s, 1.5s;
 }
+.snowflake:nth-of-type(10) {
+    left: 25%;
+    -webkit-animation-delay: 2s, 0s;
+    animation-delay: 2s, 0s;
+}
+.snowflake:nth-of-type(11) {
+    left: 65%;
+    -webkit-animation-delay: 4s, 2.5s;
+    animation-delay: 4s, 2.5s;
+}

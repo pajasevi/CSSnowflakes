@@ -7,11 +7,11 @@
 
 @keyframes snowflakes-fall {
   0% {
-    top: -10%;
+    transform: translateY(0vh)
   }
 
   100% {
-    top: 100%;
+    transform: translateY(110vh)
   }
 }
 
@@ -38,57 +38,113 @@
     user-select:none;
     cursor:default;
 
-    animation-name: snowflakes-fall, snowflakes-shake;
-    animation-duration: 10s, 3s;
-    animation-timing-function: linear, ease-in-out;
-    animation-iteration-count: infinite, infinite;
-    animation-play-state: running, running;
+    animation-name: snowflakes-shake;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
+
+.snowflake .inner {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: snowflakes-fall;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
 .snowflake:nth-of-type(0) {
     left: 1%;
-    animation-delay: 0s, 0s;
+    animation-delay: 0s;
 }
+.snowflake:nth-of-type(0) .inner {
+    animation-delay: 0s;
+}
+
 .snowflake:nth-of-type(1) {
     left: 10%;
-    animation-delay: 1s, 1s;
+    animation-delay: 1s;
 }
+.snowflake:nth-of-type(1) .inner {
+    animation-delay: 1s;
+}
+
 .snowflake:nth-of-type(2) {
     left: 20%;
-    animation-delay: 6s, 0.5s;
+    animation-delay: 0.5s;
 }
+.snowflake:nth-of-type(2) .inner {
+    animation-delay: 6s;
+}
+
 .snowflake:nth-of-type(3) {
     left: 30%;
-    animation-delay: 4s, 2s;
+    animation-delay: 2s;
 }
+.snowflake:nth-of-type(3) .inner {
+    animation-delay: 4s;
+}
+
 .snowflake:nth-of-type(4) {
     left: 40%;
-    animation-delay: 2s, 2s;
+    animation-delay: 2s;
 }
+.snowflake:nth-of-type(4) .inner {
+    animation-delay: 2s;
+}
+
 .snowflake:nth-of-type(5) {
     left: 50%;
-    animation-delay: 8s, 3s;
+    animation-delay: 3s;
 }
+.snowflake:nth-of-type(5) .inner {
+    animation-delay: 8s;
+}
+
 .snowflake:nth-of-type(6) {
     left: 60%;
-    animation-delay: 6s, 2s;
+    animation-delay: 2s;
 }
+.snowflake:nth-of-type(6) .inner {
+    animation-delay: 6s;
+}
+
 .snowflake:nth-of-type(7) {
     left: 70%;
-    animation-delay: 2.5s, 1s;
+    animation-delay: 1s;
 }
+.snowflake:nth-of-type(7) .inner {
+    animation-delay: 2.5s;
+}
+
 .snowflake:nth-of-type(8) {
     left: 80%;
-    animation-delay: 1s, 0s;
+    animation-delay: 0s;
 }
+.snowflake:nth-of-type(8) .inner {
+    animation-delay: 1s;
+}
+
 .snowflake:nth-of-type(9) {
     left: 90%;
-    animation-delay: 3s, 1.5s;
+    animation-delay: 1.5s;
 }
+.snowflake:nth-of-type(9) .inner {
+    animation-delay: 3s;
+}
+
 .snowflake:nth-of-type(10) {
     left: 25%;
-    animation-delay: 2s, 0s;
+    animation-delay: 0s;
 }
+.snowflake:nth-of-type(10) .inner {
+    animation-delay: 2s;
+}
+
 .snowflake:nth-of-type(11) {
     left: 65%;
-    animation-delay: 4s, 2.5s;
+    animation-delay: 2.5s;
+}
+.snowflake:nth-of-type(11) .inner {
+    animation-delay: 4s;
 }

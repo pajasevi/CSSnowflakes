@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -18,77 +19,82 @@
   <body>
 
     <!-- SNIPPET START -->
-    <style>
-    /* customizable snowflake styling */
-    .snowflake {
-      color: #fff;
-      font-size: 1em;
-      font-family: Arial;
-      text-shadow: 0 0 1px #000;
-    }
+<style>
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
 
-    @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
-    </style>
-    <div class="snowflakes" aria-hidden="true">
-      <div class="snowflake">
-      ❄
-      </div>
-      <div class="snowflake">
-      ❅
-      </div>
-      <div class="snowflake">
-      ❆
-      </div>
-      <div class="snowflake">
-      ❄
-      </div>
-      <div class="snowflake">
-      ❅
-      </div>
-      <div class="snowflake">
-      ❆
-      </div>
-      <div class="snowflake">
-      ❄
-      </div>
-      <div class="snowflake">
-      ❅
-      </div>
-      <div class="snowflake">
-      ❆
-      </div>
-      <div class="snowflake">
-      ❄
-      </div>
-    </div>
+.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+</style>
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+  <div class="snowflake">
+    <div class="inner">❅</div>
+  </div>
+</div>
 
     <!-- SNIPPET END  -->
 
-
-    <a href="https://github.com/pajasevi/CSSnowflakes"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+    <a href="https://github.com/pajasevi/CSSnowflakes"><img style="position: absolute; top: 0; right: 0; border: 0;" decoding="async" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_white_ffffff.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" loading="lazy" data-recalc-dims="1"></a>
 
     <div id="page">
 
-    <h1>CSSnowflakes</h1>
-    <h2>non-JS snowflakes for your website</h2>
+      <h1>CSSnowflakes</h1>
+      <h2>non-JS snowflakes for your website</h2>
 
-    <div class="description">
-    <p>CSS snowflakes for your website, no JS needed!! Working in modern browsers using CSS animation (IE10+).</p>
+      <div class="description">
+        <p>CSS snowflakes for your website, no JS needed!! Working in modern browsers using CSS animation (IE10+).</p>
 
-    <p>Just add this HTML to your webpage and enjoy beautiful falling snowflakes. Merry Christmas!!</p>
+        <p>Just add this HTML to your webpage and enjoy beautiful falling snowflakes. Merry Christmas!!</p>
 
-    <style type="text/css">
-    .gist {width:100% !important; opacity: 0.7!important;}
-    .gist-file
-    .gist-data {max-height: 50%;max-width: 100%;}
-    </style>
-    <script src="https://gist.github.com/pajasevi/0c50b0b95795debd6c1e.js"></script>
+        <style type="text/css">
+          .emgithub-container, .emgithub-file {max-height: 50vh;}
+          .emgithub-container {opacity: 0.7!important;}
+          .emgithub-file {overflow: auto !important;}
+          .emgithub-container .file-meta {position: sticky; bottom: 0;}
+        </style>
+        <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fpajasevi%2FCSSnowflakes%2Fblob%2Fmaster%2Fsnippet.html&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+        <hr>
 
-    <hr>
-
-    <span class="love">Made with &hearts; by <a href="https://twitter.com/pajasevi">@pajasevi</a></span>
-    <a class="github-link" href="https://github.com/pajasevi/CSSnowflakes">GitHub</a>
-    </div>
+        <span class="love">Made with &hearts; by <a href="https://twitter.com/PavelTheCoder">@PavelTheCoder</a></span>
+        <a class="github-link" href="https://github.com/pajasevi/CSSnowflakes">GitHub</a>
+      </div>
 
     </div>
 

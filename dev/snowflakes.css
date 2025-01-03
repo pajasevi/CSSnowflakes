@@ -37,6 +37,7 @@
   -webkit-user-select: none;
   user-select: none;
   cursor: default;
+  pointer-events: none;
 
   animation-name: snowflakes-shake;
   animation-duration: 3s;
